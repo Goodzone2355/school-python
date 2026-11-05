@@ -1,0 +1,8 @@
+A=open("E:/Python/Обработка массивов из файлов/A.txt")
+B=open('E:/Python/Обработка массивов из файлов/A1.txt','w')
+s = A.read().split()
+array = list(map(int, s))
+array.sort(key = lambda x: x%10)
+B.write(str(array))
+A.close()
+B.close()
